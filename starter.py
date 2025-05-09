@@ -1,6 +1,9 @@
 from transformers import AutoTokenizer, BertModel, GPT2LMHeadModel, GPT2Tokenizer
 import torch.optim as optim
 
+from transformers import BertTokenizer
+from torch.utils.data import DataLoader
+
 import torch
 import math
 import time
@@ -92,10 +95,7 @@ def main():
     tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
     model = BertModel.from_pretrained("bert-base-uncased")
     optimizer = optim.Adam(model.parameters(), lr=3e-5)
-    linear = torch.rand(768,2)
-    
-#    Add code to fine-tune and test your MCQA classifier.
-           
+    linear = torch.rand(768,2)    
                  
 if __name__ == "__main__":
     main()

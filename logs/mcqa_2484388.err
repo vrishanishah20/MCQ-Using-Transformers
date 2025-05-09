@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/gpfs/home/jci0365/MCQ-Using-Transformers/training_classifier.py", line 2, in <module>
+    from transformers import BertTokenizer
+ModuleNotFoundError: No module named 'transformers'
